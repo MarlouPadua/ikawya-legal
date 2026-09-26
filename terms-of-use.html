@@ -60,7 +60,7 @@
         }
 
         header {
-            margin-bottom: 40px;
+            margin-bottom: 24px;
             padding-bottom: 28px;
             border-bottom: 1px solid var(--border);
         }
@@ -82,6 +82,51 @@
             margin: 0;
             color: var(--muted);
             font-size: 0.95rem;
+        }
+
+        .doc-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .doc-switch a,
+        .doc-switch span.current {
+            padding: 6px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            text-decoration: none;
+        }
+
+        .doc-switch a {
+            color: var(--accent);
+        }
+
+        .doc-switch a:hover {
+            background: #eef0fb;
+            border-color: var(--accent);
+            text-decoration: none;
+        }
+
+        .doc-switch span.current {
+            color: var(--text);
+            font-weight: 600;
+            background: #f8f9fa;
+        }
+
+        .doc-switch .back {
+            margin-left: auto;
+            color: var(--muted);
+            border: none;
+            padding: 6px 0;
+        }
+
+        .doc-switch .back:hover {
+            color: var(--accent);
+            background: none;
         }
 
         h2 {
@@ -179,6 +224,11 @@
             h2 {
                 font-size: 1.2rem;
             }
+
+            .doc-switch .back {
+                margin-left: 0;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -197,11 +247,17 @@
             </p>
         </header>
 
+        <nav class="doc-switch" aria-label="Legal document navigation">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span class="current">Terms of Use</span>
+            <a class="back" href="index.html">&larr; All legal documents</a>
+        </nav>
+
         <p>
             These Terms of Use ("Terms") govern your access to and use of
             the <strong>ikawya</strong> mobile application ("ikawya", "the
-            app"), developed by <strong>Marlou Padua</strong> ("we", "us",
-            "the developer"). By downloading, installing, or using ikawya,
+            app"), created by <strong>Marlou Padua</strong> ("we", "us",
+            "the prompter"). By downloading, installing, or using ikawya,
             you agree to be bound by these Terms. If you do not agree,
             please do not use the app.
         </p>
@@ -220,7 +276,7 @@
             application. It lets you teach it facts about yourself, hold
             conversations, keep a diary, and store related images and audio
             - primarily on your own device. It does not require a
-            developer-hosted account to use its core features.
+            prompter-hosted account to use its core features.
         </p>
 
         <h2>2. Eligibility</h2>
@@ -245,7 +301,7 @@
         <p>
             This license does not give you any ownership of ikawya itself.
             All rights, title, and interest in the app - including its code,
-            design, and branding - remain with the developer, except for
+            design, and branding - remain with the prompter, except for
             content you create, which is addressed below.
         </p>
 
@@ -329,7 +385,7 @@
             ikawya provides local backup and export functionality, and the
             current implementation encrypts backup/export files before they
             are saved. These files are created from Your Content and are not
-            automatically uploaded to a developer-operated server.
+            automatically uploaded to a prompter-operated server.
         </p>
 
         <p>
@@ -382,7 +438,7 @@
 
         <p>
             To the maximum extent permitted by applicable law, the
-            developer shall not be liable for any indirect, incidental,
+            prompter shall not be liable for any indirect, incidental,
             special, consequential, or punitive damages, or any loss of
             data, content, profits, or goodwill, arising out of or related
             to your use of, or inability to use, ikawya - including loss of
@@ -399,9 +455,9 @@
 
         <p>
             You may stop using ikawya, and delete it from your device, at
-            any time. Because ikawya does not operate developer-hosted
+            any time. Because ikawya does not operate prompter-hosted
             accounts for its core features, there is generally no
-            developer-side account to terminate; uninstalling the app and
+            prompter-side account to terminate; uninstalling the app and
             deleting any local backups you created is sufficient to stop
             all use.
         </p>
@@ -425,10 +481,19 @@
         <h2>14. Governing Law</h2>
 
         <p>
-            These Terms are governed by the laws of the Republic of the
-            Philippines, without regard to its conflict-of-laws principles,
-            except where applicable local consumer-protection law requires
-            otherwise.
+            ikawya is made available to users worldwide, and these Terms do
+            not designate any single country's laws or courts as
+            exclusively governing. Wherever legally possible, these Terms
+            should be interpreted according to general principles of
+            contract law common to most jurisdictions.
+        </p>
+
+        <p>
+            If you are a consumer in a country whose law grants you
+            mandatory protections that cannot be waived by agreement,
+            nothing in these Terms is intended to override or limit those
+            protections, and they continue to apply to you alongside these
+            Terms.
         </p>
 
         <h2>15. Severability</h2>
@@ -447,7 +512,7 @@
         </p>
 
         <div class="contact">
-            <p><strong>Developer:</strong> Marlou Padua</p>
+            <p><strong>Prompter:</strong> Marlou Padua</p>
             <p><strong>App:</strong> ikawya</p>
             <p>
                 <strong>Contact:</strong>
@@ -457,11 +522,11 @@
             </p>
         </div>
 
-        <h2>17. Developer Information</h2>
+        <h2>17. Prompter Information</h2>
 
         <div class="info-box">
             <p><strong>App name:</strong> ikawya</p>
-            <p><strong>Developer:</strong> Marlou Padua</p>
+            <p><strong>Prompter:</strong> Marlou Padua</p>
             <p><strong>Application ID:</strong> com.marloupadua.ikawya</p>
         </div>
 
