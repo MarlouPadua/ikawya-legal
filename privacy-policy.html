@@ -60,7 +60,7 @@
         }
 
         header {
-            margin-bottom: 40px;
+            margin-bottom: 24px;
             padding-bottom: 28px;
             border-bottom: 1px solid var(--border);
         }
@@ -82,6 +82,51 @@
             margin: 0;
             color: var(--muted);
             font-size: 0.95rem;
+        }
+
+        .doc-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .doc-switch a,
+        .doc-switch span.current {
+            padding: 6px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            text-decoration: none;
+        }
+
+        .doc-switch a {
+            color: var(--accent);
+        }
+
+        .doc-switch a:hover {
+            background: #eef0fb;
+            border-color: var(--accent);
+            text-decoration: none;
+        }
+
+        .doc-switch span.current {
+            color: var(--text);
+            font-weight: 600;
+            background: #f8f9fa;
+        }
+
+        .doc-switch .back {
+            margin-left: auto;
+            color: var(--muted);
+            border: none;
+            padding: 6px 0;
+        }
+
+        .doc-switch .back:hover {
+            color: var(--accent);
+            background: none;
         }
 
         h2 {
@@ -179,6 +224,11 @@
             h2 {
                 font-size: 1.2rem;
             }
+
+            .doc-switch .back {
+                margin-left: 0;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -197,10 +247,16 @@
             </p>
         </header>
 
+        <nav class="doc-switch" aria-label="Legal document navigation">
+            <span class="current">Privacy Policy</span>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a class="back" href="index.html">&larr; All legal documents</a>
+        </nav>
+
         <p>
             This Privacy Policy explains how <strong>ikawya</strong>,
-            developed by <strong>Marlou Padua</strong>, handles information
-            when you use the ikawya mobile application.
+            created by <strong>Marlou Padua</strong> ("the prompter"),
+            handles information when you use the ikawya mobile application.
         </p>
 
         <p>
@@ -236,7 +292,7 @@
         <h2>2. Information Collected or Transmitted</h2>
 
         <p>
-            ikawya does not operate a developer-hosted account system or
+            ikawya does not operate a prompter-hosted account system or
             require you to create an account in order to use its core
             features.
         </p>
@@ -245,7 +301,7 @@
             Based on the current implementation, personal facts,
             conversations, diary content, locally stored images, recordings,
             learned patterns, and local settings are not automatically
-            uploaded to a developer-operated server.
+            uploaded to a prompter-operated server.
         </p>
 
         <p>
@@ -319,7 +375,7 @@
 
         <p>
             ikawya does not automatically upload recorded audio to a
-            developer-operated server.
+            prompter-operated server.
         </p>
 
         <p>
@@ -345,7 +401,7 @@
 
         <p>
             ikawya does not automatically upload those images to a
-            developer-operated server.
+            prompter-operated server.
         </p>
 
         <p>
@@ -367,7 +423,7 @@
 
         <p>
             Backups are file-based and are not automatically uploaded to a
-            developer-operated cloud server.
+            prompter-operated cloud server.
         </p>
 
         <p>
@@ -405,7 +461,7 @@
 
         <p>
             The current version of ikawya does not intentionally include
-            advertising or a developer-operated analytics system.
+            advertising or a prompter-operated analytics system.
         </p>
 
         <p>
@@ -430,7 +486,7 @@
 
         <p>
             ikawya does not automatically share your locally stored personal
-            content with the developer.
+            content with the prompter.
         </p>
 
         <p>
@@ -466,7 +522,7 @@
 
         <p>
             Because ikawya primarily stores user-created information
-            locally on the user's device, the developer does not maintain a
+            locally on the user's device, the prompter does not maintain a
             central copy of that information.
         </p>
 
@@ -493,7 +549,7 @@
 
         <p>
             ikawya is designed to keep personal information primarily on the
-            user's device rather than on a developer-operated server.
+            user's device rather than on a prompter-operated server.
         </p>
 
         <p>
@@ -516,7 +572,7 @@
 
         <p>
             ikawya is not designed to knowingly collect personal information
-            from children through a developer-operated online service.
+            from children through a prompter-operated online service.
         </p>
 
         <p>
@@ -584,7 +640,7 @@
         </p>
 
         <div class="contact">
-            <p><strong>Developer:</strong> Marlou Padua</p>
+            <p><strong>Prompter:</strong> Marlou Padua</p>
             <p><strong>App:</strong> ikawya</p>
             <p>
                 <strong>Privacy contact:</strong>
@@ -594,11 +650,11 @@
             </p>
         </div>
 
-        <h2>15. Developer Information</h2>
+        <h2>15. Prompter Information</h2>
 
         <div class="info-box">
             <p><strong>App name:</strong> ikawya</p>
-            <p><strong>Developer:</strong> Marlou Padua</p>
+            <p><strong>Prompter:</strong> Marlou Padua</p>
             <p><strong>Application ID:</strong> com.marloupadua.ikawya</p>
         </div>
 
